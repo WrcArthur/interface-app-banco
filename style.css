@@ -1,0 +1,281 @@
+/*  display
+    position
+    width
+    height
+    border-radius
+    background */
+
+/* @font-face {
+    font-family: 'RoboMono';
+    src: url('./fonts/RobotoMono-Thin.ttf');
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: #121725;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 375px;
+    height: 968px;
+    background: #181f31;
+}
+
+.infoMenu {                                 /* menus retangulares */
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 342px;
+    height: 99px;
+    /* border-radius: 10px; */
+    font-size: 14px;
+}
+
+.logo {                                     /* duas logos que estão presentes nas duas primeiras partes*/
+    margin: 0;
+    margin: auto 20px;
+    font-size: 25px;
+    color: #41bb8f;
+}
+
+#firstMenu {                                /* primeiro menu */
+    border-bottom: 1px solid #ffffff3d;
+}
+
+#apresentation {                            /* Olá (nome do usuário) */
+    margin: auto 15px;
+    font-size: 20px;
+}
+
+#hello {                                    /* Olá */
+    margin: 0;
+    color: #FDFDFD;
+}
+
+#name {                                     /* Nome do usuário*/
+    margin: 0;
+    color: #31ed98;
+}
+
+#logoUser {
+    width: 20px;
+    height: 20px;
+    background: url(images/logo-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#logoEye {
+    width: 20px;
+    height: 20px;
+    background: url(images/eye-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#secondMenu {                               /* Segundo menu com informação do valor total na conta*/
+}
+
+#accountTotal {                             /* Engloba o texto e o valor*/
+    margin-top: 16px;
+    margin-left: 15px;
+}
+
+#accountTotalText {                         /* "Total na conta" */
+    margin: 0;
+    font-size: 12px;
+    color: #BFC1C5;
+}
+
+#accountValue {                             /* Valor total na conta */
+    margin: 0;
+    font-size: 25px;
+    color: #FDFDFD;
+}
+
+#creditMenu {                               /* Menu de crédito */
+    flex-direction: column;
+    background-color: #202738;
+}
+
+#currentCredit {                            /* Crédito atual */
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 12px 20px 5px 20px;
+}
+
+#creditValueText {
+    color: #aaaaaac5;
+}
+
+#creditValue, #maximumLimitText {
+    color: #fff;
+}
+
+#creditBar {                                /* Barro total de crédito */
+    margin-left: 20px;
+    width: 311px;
+    height: 5px;
+    border-radius: 3px;
+    background: #31ed9880;
+}
+
+#progressBar {                              /* Progresso da barra de crédito */
+    width: 10%;
+    height: 100%;
+    border-radius: 3px;
+    background-color: #31ed98;
+}
+
+#limit {                                    /* Limite de crédito */
+    display: inline-flex;
+    margin: 5px 20px 12px 20px;
+}
+
+#maximumLimit {
+    margin-left: 5px;
+    color: #aaaaaac5;
+}
+
+.text {
+    margin: 35px 20px;
+    font-size: 14px;
+    color: #aaaaaac5;
+}
+
+#add {                                      /* Botão adicionar */
+    text-decoration: none;
+    font-size: 12px;
+    color: #31ed98;
+}
+
+#menu {                                     /* Menu com as 4 opções */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 342px;
+    margin-left: 20px;
+    color: #aaaaaac5;
+    font-size: 12px;
+}
+
+#menu :first-child{                        /* Ícones do menu */
+    display: flex;
+    flex-direction: row;
+}
+
+#home {
+    width: 20px;
+    height: 20px;
+    background: url(images/home-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#insc {
+    width: 20px;
+    height: 20px;
+    background: url(images/doc-vetor.png) no-repeat;
+    background-size: contain;
+}
+
+#trans {
+    width: 20px;
+    height: 20px;
+    background: url(images/transactions-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#est {
+    width: 20px;
+    height: 20px;
+    background: url(images/statistics-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#car {
+    width: 20px;
+    height: 20px;
+    background: url(images/card-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#myAddSubscriptions {                                      /* "Minhas inscrições" e botão de adicionar */
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 20px;
+}
+
+#subscriptions {                            /* Sessão com os três demonstrativos */
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.sub {                                      /* Demonstrativo unitário */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    height: 60px;
+    border-radius: 2px;
+    font-size: 12px;
+    background-color: #202738;
+    color: #fff;
+}
+
+#spotfy .subLogo {
+    width: 24px;
+    height: 24px;
+    background: url(images/spotfy.png) no-repeat;
+    background-size: contain;
+}
+
+#netflix .subLogo {
+    width: 24px;
+    height: 24px;
+    background: url(images/netflix.webp) no-repeat;
+    background-size: contain;
+}
+
+#crunchyroll .subLogo {
+    width: 24px;
+    height: 24px;
+    background: url(images/crunchyroll.png) no-repeat;
+    background-size: contain;
+}
+
+.subLogo {                                  /* Logo do item */
+    margin-left: 15px;
+}
+
+.subIdentification {                        /* Identificação com nome e data */
+    margin-right: 110px;
+}
+
+.subIdentification :nth-child(2), .subIdentification :nth-child(3), .subIdentification :nth-child(4) { /* data e hora*/
+    display: inline;
+    color: #818181c5;
+}
+
+.subValue {                                 /* Valor */
+    margin-right: 15px;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    background: #1f293c;
+}
+
+footer a {
+    width: 80px;
+    height: 80px;
+}
