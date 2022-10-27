@@ -77,6 +77,8 @@ main {
     height: 20px;
     background: url(images/eye-vector.png) no-repeat;
     background-size: contain;
+    background-color: #31ed9833;
+    border-radius: 20px;
 }
 
 #secondMenu {                               /* Segundo menu com informação do valor total na conta*/
@@ -158,7 +160,7 @@ main {
 #menu {                                     /* Menu com as 4 opções */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 342px;
     margin-left: 20px;
     color: #aaaaaac5;
@@ -167,42 +169,46 @@ main {
 
 #menu :first-child{                        /* Ícones do menu */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-#home {
-    width: 20px;
-    height: 20px;
-    background: url(images/home-vector.png) no-repeat;
-    background-size: contain;
+#menu a {
+    width: 40px;
+    height: 40px;
+    background-color: #31ed9833;
+    border-radius: 20px;
+    background-position: center;
+}
+
+#menu p {
+    margin-top: 10px;
 }
 
 #insc {
     width: 20px;
     height: 20px;
     background: url(images/doc-vetor.png) no-repeat;
-    background-size: contain;
+    margin-left: 5px;
 }
 
 #trans {
     width: 20px;
     height: 20px;
     background: url(images/transactions-vector.png) no-repeat;
-    background-size: contain;
+    margin-left: 8px;
 }
 
 #est {
     width: 20px;
     height: 20px;
     background: url(images/statistics-vector.png) no-repeat;
-    background-size: contain;
+    margin-left: 7px;
 }
 
-#car {
+#card {
     width: 20px;
     height: 20px;
     background: url(images/card-vector.png) no-repeat;
-    background-size: contain;
 }
 
 #myAddSubscriptions {                                      /* "Minhas inscrições" e botão de adicionar */
@@ -273,9 +279,49 @@ footer {
     margin-top: auto;
     margin-bottom: 0px;
     background: #1f293c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
 footer a {
     width: 80px;
     height: 80px;
+    margin-top: 30px;
+}
+
+#footer-home {
+    width: 20px;
+    height: 20px;
+    background: url(images/home-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#footer-insc {
+    width: 20px;
+    height: 20px;
+    background: url(images/doc-vetor.png) no-repeat;
+    background-size: contain;
+}
+
+#footer-trans {
+    width: 20px;
+    height: 20px;
+    background: url(images/transactions-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#footer-est {
+    width: 20px;
+    height: 20px;
+    background: url(images/statistics-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#footer-card {
+    width: 20px;
+    height: 20px;
+    background: url(images/card-vector.png) no-repeat;
+    background-size: contain;
 }
