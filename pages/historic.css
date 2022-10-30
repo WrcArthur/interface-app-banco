@@ -125,135 +125,84 @@ main {
 #demonstrative {                               /* Menu demonstrativo */
     flex-direction: column;
     background-color: #202738;
-    height: 490px;
+    height: 744px;
 }
 
-#weeks {
-
+.titles {
+    margin: 16px 0 0px 16px;
+    font-size: 14px;
+    color: #BFC1C5;
 }
 
-.weekAndValue {                            /* Semana e valor gasto */
+#titleInscripitons {
+    /* font-size: 14px;
+    color: #BFC1C5; */
+}
+
+.sub {                                      /* Demonstrativo unitário */
     display: flex;
     justify-content: space-between;
-    margin: 16px 20px 16px 20px;
-}
-
-#creditValueText {
-    color: #aaaaaac5;
-}
-
-#creditValue, #maximumLimitText {
+    align-items: center;
+    margin-top: 12px;
+    height: 70px;
+    border-radius: 2px;
+    font-size: 12px;
+    background-color: #202738;
     color: #fff;
+    border-bottom: 1px solid #222A3F;
 }
 
-#firstCreditBar {                                /*  total de gastos */
+
+#spotfy .subLogo {
+    background: url(../images/netflix.webp) no-repeat;
+}
+
+#netflix .subLogo {
+    background: url(../images/netflix.webp) no-repeat;
+}
+
+#crunchyroll .subLogo {
+    background: url(../images/crunchyroll.png) no-repeat;
+}
+
+.subLogo {                                  /* Logo do item */
+    margin-left: 15px;
+}
+
+.subIdentification {                        /* Identificação com nome e data */
+    margin-right: 90px;
+}
+
+.subIdentification :nth-child(2), .subIdentification :nth-child(3), .subIdentification :nth-child(4) { /* data e hora*/
+    display: inline;
+    color: #818181c5;
+}
+
+.subValue {                                 /* Valor */
+    margin-right: 15px;
+}
+
+.subLogo {
     margin-left: 20px;
-    width: 311px;
-    height: 5px;
-    border-radius: 3px;
-    background: #31ed9880;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
 }
 
-#firstProgressBar {                              /* Progresso da barra de gastos */
-    width: 249px;
-    height: 100%;
-    border-radius: 3px;
-    background-color: #31ed98;
+#acai .subLogo {
+    background: url(../images/shopping-vector.png) no-repeat;
 }
 
-#secondCreditBar {
-    margin-left: 20px;
-    width: 311px;
-    height: 5px;
-    border-radius: 3px;
-    background: #fdc43380;
+#kabum .subLogo {
+    background: url(../images/shopping-vector.png) no-repeat;
 }
 
-#secondProgressBar {
-    width: 238px;
-    height: 100%;
-    border-radius: 3px;
-    background-color: #fdc433;
+#transfer .subLogo {
+    background: url(../images/transactions-vector.png) no-repeat;
 }
 
-#thirdCreditBar {
-    margin-left: 20px;
-    width: 311px;
-    height: 5px;
-    border-radius: 3px;
-    background: #31ed9880;
-}
-
-#thirdProgressBar {
-    width: 60px;
-    height: 100%;
-    border-radius: 3px;
-    background-color: #31ed98;
-}
-
-#fourthCreditBar {
-    margin-left: 20px;
-    width: 311px;
-    height: 5px;
-    border-radius: 3px;
-    background: #fc494980;
-}
-
-#fourthProgressBar {
-    width: 301px;
-    height: 100%;
-    border-radius: 3px;
-    background-color: #fc4949;
-}
-
-#invoiceSummary {
-    display: flex;
-    justify-content: space-between;
-    width: 311px;
-    margin-left: 20px;
-}
-
-#invoiceSummary :first-child{
-    color: #bfc1c5;
-}
-
-#invoiceStatus {
-    color: #31ED98;
-}
-
-#payment {
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    color: #bfc1c5;
-}
-
-#payment div {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: 20px;
-    width: 311px;
-    margin-left: 20px;
-}
-
-#historic {
-    text-decoration: none;
-    font-size: 12px;
-    color: #31ed98;
-    margin: 0 0 16px 20px;
-}
-
-#nextMonth {
-    width: 343px;
-    height: 68px;
-    background: #202738;
-    font-size: 12px;
-    color: #fdfdfd;
-}
-
-#nextMonth p {
-    margin: 26px 20px;
+#transfer .subIdentification {
+    margin-right: 75px;
 }
 
 footer {

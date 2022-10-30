@@ -294,34 +294,34 @@ footer a {
 #footer-home {
     width: 20px;
     height: 20px;
-    background: url(images/home-vector.png) no-repeat;
+    background: url(images/home-vector-white.png) no-repeat;
     background-size: contain;
 }
 
 #footer-insc {
     width: 20px;
     height: 20px;
-    background: url(images/doc-vetor.png) no-repeat;
+    background: url(images/doc-vetor-white.png) no-repeat;
     background-size: contain;
 }
 
 #footer-trans {
     width: 20px;
     height: 20px;
-    background: url(images/transactions-vector.png) no-repeat;
+    background: url(images/transactions-vector-white.png) no-repeat;
     background-size: contain;
 }
 
 #footer-est {
     width: 20px;
     height: 20px;
-    background: url(images/statistics-vector.png) no-repeat;
+    background: url(images/statistics-vector-white.png) no-repeat;
     background-size: contain;
 }
 
 #footer-card {
     width: 20px;
     height: 20px;
-    background: url(images/card-vector.png) no-repeat;
+    background: url(images/card-vector-white.png) no-repeat;
     background-size: contain;
 }
