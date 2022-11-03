@@ -1,15 +1,3 @@
-/*  display
-    position
-    width
-    height
-    border-radius
-    background */
-
-/* @font-face {
-    font-family: 'RoboMono';
-    src: url('./fonts/RobotoMono-Thin.ttf');
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -25,8 +13,56 @@ main {
     flex-direction: column;
     margin: 20px auto;
     width: 375px;
-    height: 968px;
-    background: #181f31;
+    height: 1125px;
+    background: #181F31;
+}
+
+#infos {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 16px 0 15px;
+}
+
+#hour {
+    font-size: 16px;
+    color: #FDBBFF;
+}
+
+#signalAndBattery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70px;
+}
+
+#mobileSignal {
+    width: 17px;
+    height: 11px;
+    background: url(../images/mobile-signal-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#wifiSignal {
+    width: 16px;
+    height: 11px;
+    background: url(../images/wifi-signal-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#battery {
+    width: 22px;
+    height: 11px;
+    background: url(../images/battery-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#returnArrow {
+    margin-top: 50px;
+    margin-left: 18px;
+    width: 16px;
+    height: 10px;
+    background: url(../images/arrow-left-vector.png) no-repeat;
+    background-size: contain;
 }
 
 .infoMenu {                                 /* menus retangulares */
@@ -38,19 +74,20 @@ main {
     font-size: 14px;
 }
 
-.logo {                                     /* duas logos que estão presentes nas duas primeiras partes*/
-    margin: 0;
-    margin: auto 20px;
+.logo {   
+    margin: auto 0px;
+    width: 20px;
+    height: 20px;
     font-size: 25px;
-    color: #41bb8f;
+    color: #41BB8F;
 }
 
-#firstMenu {                                /* primeiro menu */
-    border-bottom: 1px solid #ffffff3d;
+#firstMenu {
+    border-bottom: 1px solid #FFFFFF3D;
 }
 
-#apresentation {                            /* Olá (nome do usuário) */
-    margin: auto 15px;
+#apresentation {
+    margin: auto 0px;
     font-size: 20px;
 }
 
@@ -61,45 +98,24 @@ main {
 
 .greenText {
     margin: 0;
-    color: #31ed98;
+    color: #31ED98;
 }
 
 #logoUser {
-    width: 20px;
-    height: 20px;
     background: url(../images/logo-vector.png) no-repeat;
     background-size: contain;
 }
 
-#logoEye {
-    width: 20px;
-    height: 20px;
-    background: url(images/eye-vector.png) no-repeat;
+#dropdown {
+    width: 10px;
+    height: 6px;
+    background: url(../images/dropdown-vector.png) no-repeat;
     background-size: contain;
-    background-color: #31ed9833;
-    border-radius: 20px;
-}
-
-#accountTotal {                             /* Engloba o texto e o valor*/
-    margin-top: 16px;
-    margin-left: 15px;
-}
-
-#accountTotalText {                         /* "Total na conta" */
-    margin: 0;
-    font-size: 12px;
-    color: #BFC1C5;
-}
-
-#accountValue {                             /* Valor total na conta */
-    margin: 0;
-    font-size: 25px;
-    color: #FDFDFD;
 }
 
 #expenseChart {
     width: 342px;
-    margin: 10px auto;
+    height: 30px;
 }
 
 #expenseChart h5 {
@@ -112,31 +128,22 @@ main {
     color: #BFC1C5;
 }
 
-/* #expenseChart :nth-child(3), #expenseChart:nth-child(3) {
-    background-color: red;
-} */
-
 #respectiveMonth {
     display: inline-flex;
     font-size: 12px;
-    color: #31ed98;
+    color: #31ED98;
 }
 
-#demonstrative {                               /* Menu demonstrativo */
+#demonstrative {
     flex-direction: column;
-    background-color: #202738;
     height: 744px;
+    background-color: #202738;
 }
 
 .titles {
     margin: 16px 0 0px 16px;
     font-size: 14px;
     color: #BFC1C5;
-}
-
-#titleInscripitons {
-    /* font-size: 14px;
-    color: #BFC1C5; */
 }
 
 .sub {                                      /* Demonstrativo unitário */
@@ -147,25 +154,28 @@ main {
     height: 70px;
     border-radius: 2px;
     font-size: 12px;
-    background-color: #202738;
-    color: #fff;
     border-bottom: 1px solid #222A3F;
+    background-color: #202738;
+    color: #FFF;
 }
 
 
 #spotfy .subLogo {
-    background: url(../images/netflix.webp) no-repeat;
+    background: url(../images/spotfy.png) no-repeat;
+    background-size: contain;
 }
 
 #netflix .subLogo {
     background: url(../images/netflix.webp) no-repeat;
+    background-size: contain;
 }
 
 #crunchyroll .subLogo {
     background: url(../images/crunchyroll.png) no-repeat;
+    background-size: contain;
 }
 
-.subLogo {                                  /* Logo do item */
+.subLogo {
     margin-left: 15px;
 }
 
@@ -175,10 +185,10 @@ main {
 
 .subIdentification :nth-child(2), .subIdentification :nth-child(3), .subIdentification :nth-child(4) { /* data e hora*/
     display: inline;
-    color: #818181c5;
+    color: #818181C5;
 }
 
-.subValue {                                 /* Valor */
+.subValue {
     margin-right: 15px;
 }
 
@@ -205,55 +215,45 @@ main {
     margin-right: 75px;
 }
 
-footer {
-    width: 100%;
-    height: 80px;
-    margin-top: auto;
-    margin-bottom: 0px;
-    background: #1f293c;
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
+    margin-top: auto;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 80px;
+    background: #1F293C;
 }
 
-footer a {
-    width: 80px;
-    height: 80px;
+.navItem {
+    width: 20px;
+    height: 20px;
     margin-top: 30px;
 }
 
-#footer-home {
-    width: 20px;
-    height: 20px;
+#nav-home {
     background: url(../images/home-vector-white.png) no-repeat;
     background-size: contain;
 }
 
-#footer-insc {
-    width: 20px;
-    height: 20px;
+#nav-insc {
     background: url(../images/doc-vetor-white.png) no-repeat;
     background-size: contain;
 }
 
-#footer-trans {
-    width: 20px;
-    height: 20px;
+#nav-trans {
     background: url(../images/transactions-vector-white.png) no-repeat;
     background-size: contain;
 }
 
-#footer-est {
-    width: 20px;
-    height: 20px;
+#nav-est {
     background: url(../images/statistics-vector-white.png) no-repeat;
     background-size: contain;
 }
 
-#footer-card {
-    width: 20px;
-    height: 20px;
+#nav-card {
     background: url(../images/card-vector-white.png) no-repeat;
     background-size: contain;
 }

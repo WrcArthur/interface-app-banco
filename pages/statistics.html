@@ -9,6 +9,15 @@
 </head>
 <body>
     <main>
+        <section id="infos">
+            <p id="hour">9:41</p>
+            <div id="signalAndBattery">
+                <p id="mobileSignal"></p>
+                <p id="wifiSignal"></p>
+                <p id="battery"></p>
+            </div>
+        </section>
+            <a href="#" class="logo" id="returnArrow"></a>
         <section class="infoMenu" id="firstMenu">
             <div id="apresentation">
                 <p class="whiteText">Confira 
@@ -19,11 +28,12 @@
             <a href="#" id="logoUser" class="logo"></a>
         </section>
         
-        <section id="expenseChart">
+        <section class="infoMenu" id="expenseChart">
             <div>
                 <h5>Gráfico de gastos</h5>
                 <p>Gastos do mês de <span id="respectiveMonth">Janeiro</span>.</p>
             </div>
+            <a href="#" id="dropdown" class="logo"></a>
         </section>
 
         <section class="infoMenu" id="demonstrative">
@@ -32,29 +42,29 @@
                     <p id="creditValueText">1ª semana</p>
                     <p id="creditValue">R$500,00</p>
                 </div>
-                <div id="firstCreditBar">
-                    <div id="firstProgressBar"></div>
+                <div class="creditBar" id="firstCreditBar">
+                    <div class="progressBar" id="firstProgressBar"></div>
                 </div>
                 <div class="weekAndValue" id="secondWeek">
                     <p id="creditValueText">2ª semana</p>
                     <p id="creditValue">R$700,00</p>
                 </div>
-                <div id="secondCreditBar">
-                    <div id="secondProgressBar"></div>
+                <div class="creditBar" id="secondCreditBar">
+                    <div class="progressBar" id="secondProgressBar"></div>
                 </div>
                 <div class="weekAndValue" id="thirtWeek">
                     <p id="creditValueText">3ª semana</p>
                     <p id="creditValue">R$200,00</p>
                 </div>
-                <div id="thirdCreditBar">
-                    <div id="thirdProgressBar"></div>
+                <div class="creditBar" id="thirdCreditBar">
+                    <div class="progressBar" id="thirdProgressBar"></div>
                 </div>
                 <div class="weekAndValue" id="fourthWeek">
                     <p id="creditValueText">4ª semana</p>
                     <p id="creditValue">R$950,00</p>
                 </div>
-                <div id="fourthCreditBar">
-                    <div id="fourthProgressBar"></div>
+                <div class="creditBar" id="fourthCreditBar">
+                    <div class="progressBar" id="fourthProgressBar"></div>
                 </div>
             </div>
 
@@ -87,13 +97,13 @@
                 <p id="value"> R$ 3.500,45</p>
             </section>
 
-        <footer>
-                <a href="#" id="footer-home"></a>
-                <a href="#" id="footer-insc"></a>
-                <a href="#" id="footer-trans"></a>
-                <a href="#" id="footer-est"></a>
-                <a href="#" id="footer-card"></a>
-        </footer>
+        <nav>
+                <a href="#" id="nav-home" class="navItem"></a>
+                <a href="#" id="nav-insc" class="navItem"></a>
+                <a href="#" id="nav-trans" class="navItem"></a>
+                <a href="#" id="nav-est" class="navItem"></a>
+                <a href="#" id="nav-card" class="navItem"></a>
+        </nav>
     </main>
 </body>
 </html>

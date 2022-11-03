@@ -1,15 +1,3 @@
-/*  display
-    position
-    width
-    height
-    border-radius
-    background */
-
-/* @font-face {
-    font-family: 'RoboMono';
-    src: url('./fonts/RobotoMono-Thin.ttf');
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -29,40 +17,77 @@ main {
     background: #181f31;
 }
 
+#infos {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 16px 0 15px;
+}
+
+#hour {
+    font-size: 16px;
+    color: #FDFDFD;
+}
+
+#signalAndBattery {
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mobileSignal {
+    width: 17px;
+    height: 11px;
+    background: url(images/mobile-signal-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#wifiSignal {
+    width: 16px;
+    height: 11px;
+    background: url(images/wifi-signal-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#battery {
+    width: 22px;
+    height: 11px;
+    background: url(images/battery-vector.png) no-repeat;
+    background-size: contain;
+}
+
 .infoMenu {                                 /* menus retangulares */
     display: flex;
     justify-content: space-between;
     margin: 10px auto;
     width: 342px;
     height: 99px;
-    /* border-radius: 10px; */
     font-size: 14px;
 }
 
-.logo {                                     /* duas logos que estão presentes nas duas primeiras partes*/
-    margin: 0;
-    margin: auto 20px;
+.logo {
+    margin: auto 0px;
     font-size: 25px;
-    color: #41bb8f;
+    color: #41BB8F;
 }
 
-#firstMenu {                                /* primeiro menu */
-    border-bottom: 1px solid #ffffff3d;
+#firstMenu {
+    border-bottom: 1px solid #FFFFFF3d;
 }
 
 #apresentation {                            /* Olá (nome do usuário) */
-    margin: auto 15px;
+    margin: auto 0;
     font-size: 20px;
 }
 
-#hello {                                    /* Olá */
+#hello {
     margin: 0;
     color: #FDFDFD;
 }
 
-#name {                                     /* Nome do usuário*/
+#name { 
     margin: 0;
-    color: #31ed98;
+    color: #31ED98;
 }
 
 #logoUser {
@@ -72,52 +97,53 @@ main {
     background-size: contain;
 }
 
+/* #logoEyeX {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #31ED9833;
+} */
+
 #logoEye {
     width: 20px;
     height: 20px;
     background: url(images/eye-vector.png) no-repeat;
     background-size: contain;
-    background-color: #31ed9833;
-    border-radius: 20px;
-}
-
-#secondMenu {                               /* Segundo menu com informação do valor total na conta*/
 }
 
 #accountTotal {                             /* Engloba o texto e o valor*/
     margin-top: 16px;
-    margin-left: 15px;
 }
 
-#accountTotalText {                         /* "Total na conta" */
+#accountTotalText {
     margin: 0;
     font-size: 12px;
     color: #BFC1C5;
 }
 
-#accountValue {                             /* Valor total na conta */
+#accountValue {
     margin: 0;
     font-size: 25px;
     color: #FDFDFD;
 }
 
-#creditMenu {                               /* Menu de crédito */
+#creditMenu {
     flex-direction: column;
     background-color: #202738;
 }
 
-#currentCredit {                            /* Crédito atual */
+#currentCredit {
     display: inline-flex;
     justify-content: space-between;
     margin: 12px 20px 5px 20px;
 }
 
 #creditValueText {
-    color: #aaaaaac5;
+    color: #AAAAAAC5;
 }
 
 #creditValue, #maximumLimitText {
-    color: #fff;
+    color: #FFF;
 }
 
 #creditBar {                                /* Barro total de crédito */
@@ -125,14 +151,14 @@ main {
     width: 311px;
     height: 5px;
     border-radius: 3px;
-    background: #31ed9880;
+    background: #31ED9880;
 }
 
 #progressBar {                              /* Progresso da barra de crédito */
     width: 10%;
     height: 100%;
     border-radius: 3px;
-    background-color: #31ed98;
+    background-color: #31ED98;
 }
 
 #limit {                                    /* Limite de crédito */
@@ -142,29 +168,29 @@ main {
 
 #maximumLimit {
     margin-left: 5px;
-    color: #aaaaaac5;
+    color: #AAAAAAC5;
 }
 
 .text {
     margin: 35px 20px;
     font-size: 14px;
-    color: #aaaaaac5;
+    color: #AAAAAAC5;
 }
 
-#add {                                      /* Botão adicionar */
+#add {
     text-decoration: none;
     font-size: 12px;
-    color: #31ed98;
+    color: #31ED98;
 }
 
 #menu {                                     /* Menu com as 4 opções */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 342px;
     margin-left: 20px;
-    color: #aaaaaac5;
+    width: 342px;
     font-size: 12px;
+    color: #AAAAAAC5;
 }
 
 #menu :first-child{                        /* Ícones do menu */
@@ -175,43 +201,40 @@ main {
 #menu a {
     width: 40px;
     height: 40px;
-    background-color: #31ed9833;
-    border-radius: 20px;
+    background-color: #31ED9833;
     background-position: center;
+    border-radius: 20px;
 }
 
 #menu p {
     margin-top: 10px;
 }
 
-#insc {
+.icon {
     width: 20px;
     height: 20px;
-    background: url(images/doc-vetor.png) no-repeat;
+}
+
+#insc {
     margin-left: 5px;
+    background: url(images/doc-vetor.png) no-repeat;
 }
 
 #trans {
-    width: 20px;
-    height: 20px;
-    background: url(images/transactions-vector.png) no-repeat;
     margin-left: 8px;
+    background: url(images/transactions-vector.png) no-repeat;
 }
 
 #est {
-    width: 20px;
-    height: 20px;
-    background: url(images/statistics-vector.png) no-repeat;
     margin-left: 7px;
+    background: url(images/statistics-vector.png) no-repeat;
 }
 
 #card {
-    width: 20px;
-    height: 20px;
     background: url(images/card-vector.png) no-repeat;
 }
 
-#myAddSubscriptions {                                      /* "Minhas inscrições" e botão de adicionar */
+#myAddSubscriptions {
     display: inline-flex;
     justify-content: space-between;
     align-items: baseline;
@@ -227,101 +250,94 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 32px;
+    margin-bottom: 32px;
     height: 60px;
     border-radius: 2px;
     font-size: 12px;
     background-color: #202738;
-    color: #fff;
+    color: #FFF;
+}
+
+.subLogo {
+    margin-left: 15px;
+    width: 24px;
+    height: 24px;
 }
 
 #spotfy .subLogo {
-    width: 24px;
-    height: 24px;
     background: url(images/spotfy.png) no-repeat;
     background-size: contain;
 }
 
 #netflix .subLogo {
-    width: 24px;
-    height: 24px;
     background: url(images/netflix.webp) no-repeat;
     background-size: contain;
 }
 
 #crunchyroll .subLogo {
-    width: 24px;
-    height: 24px;
     background: url(images/crunchyroll.png) no-repeat;
     background-size: contain;
 }
 
-.subLogo {                                  /* Logo do item */
-    margin-left: 15px;
-}
-
-.subIdentification {                        /* Identificação com nome e data */
+.subIdentification {
     margin-right: 110px;
 }
 
 .subIdentification :nth-child(2), .subIdentification :nth-child(3), .subIdentification :nth-child(4) { /* data e hora*/
     display: inline;
-    color: #818181c5;
+    color: #818181C5;
 }
 
-.subValue {                                 /* Valor */
+.subValue {
     margin-right: 15px;
 }
 
-footer {
-    width: 100%;
-    height: 80px;
-    margin-top: auto;
-    margin-bottom: 0px;
-    background: #1f293c;
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
+    margin-top: auto;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 80px;
+    background: #1F293C;
 }
 
-footer a {
-    width: 80px;
-    height: 80px;
+.selected {
+    width: 94px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #31ED9833;
+}
+
+.navItem {
+    width: 20px;
+    height: 20px;
     margin-top: 30px;
 }
 
-#footer-home {
-    width: 20px;
-    height: 20px;
-    background: url(images/home-vector-white.png) no-repeat;
+#nav-home {
+    background: url(images/home-vector.png) no-repeat;
     background-size: contain;
 }
 
-#footer-insc {
-    width: 20px;
-    height: 20px;
+#nav-insc {
     background: url(images/doc-vetor-white.png) no-repeat;
     background-size: contain;
 }
 
-#footer-trans {
-    width: 20px;
-    height: 20px;
+#nav-trans {
     background: url(images/transactions-vector-white.png) no-repeat;
     background-size: contain;
 }
 
-#footer-est {
-    width: 20px;
-    height: 20px;
+#nav-est {
     background: url(images/statistics-vector-white.png) no-repeat;
     background-size: contain;
 }
 
-#footer-card {
-    width: 20px;
-    height: 20px;
+#nav-card {
     background: url(images/card-vector-white.png) no-repeat;
     background-size: contain;
 }

@@ -1,15 +1,3 @@
-/*  display
-    position
-    width
-    height
-    border-radius
-    background */
-
-/* @font-face {
-    font-family: 'RoboMono';
-    src: url('./fonts/RobotoMono-Thin.ttf');
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +8,45 @@ body {
     background: #121725;
 }
 
+#infos {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 16px 0 15px;
+}
+
+#hour {
+    font-size: 16px;
+    color: #FDFDFD;
+}
+
+#signalAndBattery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70px;
+}
+
+#mobileSignal {
+    width: 17px;
+    height: 11px;
+    background: url(../images/mobile-signal-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#wifiSignal {
+    width: 16px;
+    height: 11px;
+    background: url(../images/wifi-signal-vector.png) no-repeat;
+    background-size: contain;
+}
+
+#battery {
+    width: 22px;
+    height: 11px;
+    background: url(../images/battery-vector.png) no-repeat;
+    background-size: contain;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -27,6 +54,15 @@ main {
     width: 375px;
     height: 968px;
     background: #181f31;
+}
+
+#returnArrow {
+    margin-top: 50px;
+    width: 16px;
+    height: 10px;
+    margin-left: 18px;
+    background: url(../images/arrow-left-vector.png) no-repeat;
+    background-size: contain;
 }
 
 .infoMenu {                                 /* menus retangulares */
@@ -39,10 +75,9 @@ main {
 }
 
 .logo {                                     /* duas logos que estão presentes nas duas primeiras partes*/
-    margin: 0;
-    margin: auto 20px;
+    margin: auto 0px;
     font-size: 25px;
-    color: #41bb8f;
+    color: #41BB8F;
 }
 
 #firstMenu {                                /* primeiro menu */
@@ -50,7 +85,7 @@ main {
 }
 
 #apresentation {                            /* Olá (nome do usuário) */
-    margin: auto 15px;
+    margin: auto 0;
     font-size: 20px;
 }
 
@@ -61,7 +96,7 @@ main {
 
 .greenText {
     margin: 0;
-    color: #31ed98;
+    color: #31ED98;
 }
 
 #logoUser {
@@ -71,35 +106,17 @@ main {
     background-size: contain;
 }
 
-#logoEye {
-    width: 20px;
-    height: 20px;
-    background: url(images/eye-vector.png) no-repeat;
+#dropdown {
+    margin-top: 12px;
+    width: 10px;
+    height: 16px;
+    background: url(../images/dropdown-vector.png) no-repeat;
     background-size: contain;
-    background-color: #31ed9833;
-    border-radius: 20px;
-}
-
-#accountTotal {                             /* Engloba o texto e o valor*/
-    margin-top: 16px;
-    margin-left: 15px;
-}
-
-#accountTotalText {                         /* "Total na conta" */
-    margin: 0;
-    font-size: 12px;
-    color: #BFC1C5;
-}
-
-#accountValue {                             /* Valor total na conta */
-    margin: 0;
-    font-size: 25px;
-    color: #FDFDFD;
 }
 
 #expenseChart {
     width: 342px;
-    margin: 10px auto;
+    height: 30px;
 }
 
 #expenseChart h5 {
@@ -112,24 +129,16 @@ main {
     color: #BFC1C5;
 }
 
-/* #expenseChart :nth-child(3), #expenseChart:nth-child(3) {
-    background-color: red;
-} */
-
 #respectiveMonth {
     display: inline-flex;
     font-size: 12px;
-    color: #31ed98;
+    color: #31ED98;
 }
 
-#demonstrative {                               /* Menu demonstrativo */
+#demonstrative {
     flex-direction: column;
     background-color: #202738;
     height: 490px;
-}
-
-#weeks {
-
 }
 
 .weekAndValue {                            /* Semana e valor gasto */
@@ -139,71 +148,59 @@ main {
 }
 
 #creditValueText {
-    color: #aaaaaac5;
+    color: #AAAAAAC5;
 }
 
 #creditValue, #maximumLimitText {
-    color: #fff;
+    color: #FFF;
 }
 
-#firstCreditBar {                                /*  total de gastos */
-    margin-left: 20px;
+.creditBar {
     width: 311px;
     height: 5px;
     border-radius: 3px;
-    background: #31ed9880;
+    margin-left: 20px;
+}
+
+.progressBar {
+    height: 100%;
+    border-radius: 3px;
+}
+
+#firstCreditBar {                                /*  total de gastos */
+    background: #31ED9880;
 }
 
 #firstProgressBar {                              /* Progresso da barra de gastos */
     width: 249px;
-    height: 100%;
-    border-radius: 3px;
-    background-color: #31ed98;
+    background-color: #31ED98;
 }
 
 #secondCreditBar {
-    margin-left: 20px;
-    width: 311px;
-    height: 5px;
-    border-radius: 3px;
-    background: #fdc43380;
+    background: #FDC43380;
 }
 
 #secondProgressBar {
     width: 238px;
-    height: 100%;
-    border-radius: 3px;
-    background-color: #fdc433;
+    background-color: #FDC433;
 }
 
 #thirdCreditBar {
-    margin-left: 20px;
-    width: 311px;
-    height: 5px;
-    border-radius: 3px;
-    background: #31ed9880;
+    background: #31ED9880;
 }
 
 #thirdProgressBar {
     width: 60px;
-    height: 100%;
-    border-radius: 3px;
-    background-color: #31ed98;
+    background-color: #31ED98;
 }
 
 #fourthCreditBar {
-    margin-left: 20px;
-    width: 311px;
-    height: 5px;
-    border-radius: 3px;
-    background: #fc494980;
+    background: #FC494980;
 }
 
 #fourthProgressBar {
     width: 301px;
-    height: 100%;
-    border-radius: 3px;
-    background-color: #fc4949;
+    background-color: #FC4949;
 }
 
 #invoiceSummary {
@@ -214,7 +211,7 @@ main {
 }
 
 #invoiceSummary :first-child{
-    color: #bfc1c5;
+    color: #BFC1C5;
 }
 
 #invoiceStatus {
@@ -225,7 +222,7 @@ main {
     display: flex;
     flex-direction: column;
     font-size: 12px;
-    color: #bfc1c5;
+    color: #BFC1C5;
 }
 
 #payment div {
@@ -233,78 +230,68 @@ main {
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 20px;
-    width: 311px;
     margin-left: 20px;
+    width: 311px;
 }
 
 #historic {
     text-decoration: none;
     font-size: 12px;
-    color: #31ed98;
+    color: #31ED98;
     margin: 0 0 16px 20px;
 }
 
 #nextMonth {
     width: 343px;
     height: 68px;
-    background: #202738;
     font-size: 12px;
-    color: #fdfdfd;
+    background: #202738;
+    color: #FDFDFD;
 }
 
 #nextMonth p {
     margin: 26px 20px;
 }
 
-footer {
-    width: 100%;
-    height: 80px;
-    margin-top: auto;
-    margin-bottom: 0px;
-    background: #1f293c;
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
+    margin-top: auto;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 80px;
+    background: #1F293C;
 }
 
-footer a {
-    width: 80px;
-    height: 80px;
+.navItem {
+    width: 20px;
+    height: 20px;
     margin-top: 30px;
 }
 
-#footer-home {
-    width: 20px;
-    height: 20px;
+#nav-home {
     background: url(../images/home-vector-white.png) no-repeat;
     background-size: contain;
 }
 
-#footer-insc {
-    width: 20px;
-    height: 20px;
+#nav-insc {
     background: url(../images/doc-vetor-white.png) no-repeat;
     background-size: contain;
 }
 
-#footer-trans {
-    width: 20px;
-    height: 20px;
+#nav-trans {
     background: url(../images/transactions-vector-white.png) no-repeat;
     background-size: contain;
 }
 
-#footer-est {
-    width: 20px;
-    height: 20px;
+#nav-est {
     background: url(../images/statistics-vector-white.png) no-repeat;
     background-size: contain;
 }
 
-#footer-card {
-    width: 20px;
-    height: 20px;
+#nav-card {
     background: url(../images/card-vector-white.png) no-repeat;
     background-size: contain;
 }
