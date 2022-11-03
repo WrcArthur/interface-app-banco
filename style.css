@@ -59,7 +59,7 @@ main {
 .infoMenu {                                 /* menus retangulares */
     display: flex;
     justify-content: space-between;
-    margin: 10px auto;
+    margin: 0px auto;
     width: 342px;
     height: 99px;
     font-size: 14px;
@@ -97,18 +97,8 @@ main {
     background-size: contain;
 }
 
-/* #logoEyeX {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #31ED9833;
-} */
-
-#logoEye {
-    width: 20px;
-    height: 20px;
-    background: url(images/eye-vector.png) no-repeat;
-    background-size: contain;
+#secondMenu {
+    align-items: center;
 }
 
 #accountTotal {                             /* Engloba o texto e o valor*/
@@ -127,8 +117,27 @@ main {
     color: #FDFDFD;
 }
 
+#logoEyeX {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #31ED9833;
+}
+
+#logoEye {
+    margin-top: 12px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(images/eye-vector.png) no-repeat;
+    background-size: contain;;
+}
+    
 #creditMenu {
     flex-direction: column;
+    margin-top: 30px;
     background-color: #202738;
 }
 
@@ -296,28 +305,36 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: baseline;
-    margin-top: auto;
-    margin-bottom: 0px;
+    align-items: center;
     width: 100%;
     height: 80px;
+    margin-top: auto;
+    margin-bottom: 0px;
     background: #1F293C;
 }
 
 .selected {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 94px;
     height: 36px;
     border-radius: 8px;
     background-color: #31ED9833;
 }
 
+.selectedText {
+    font-size: 12px;
+    color: #31ED98;
+}
+
 .navItem {
     width: 20px;
     height: 20px;
-    margin-top: 30px;
 }
 
 #nav-home {
+    display: block;
     background: url(images/home-vector.png) no-repeat;
     background-size: contain;
 }
