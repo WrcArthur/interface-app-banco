@@ -65,7 +65,7 @@ main {
     background-size: contain;
 }
 
-.infoMenu {                                 /* menus retangulares */
+.infoMenu {
     display: flex;
     justify-content: space-between;
     margin: 10px auto;
@@ -74,17 +74,17 @@ main {
     font-size: 14px;
 }
 
-.logo {                                     /* duas logos que estão presentes nas duas primeiras partes*/
+.logo {
     margin: auto 0px;
     font-size: 25px;
     color: #41BB8F;
 }
 
-#firstMenu {                                /* primeiro menu */
+#firstMenu {
     border-bottom: 1px solid #ffffff3d;
 }
 
-#apresentation {                            /* Olá (nome do usuário) */
+#apresentation {
     margin: auto 0;
     font-size: 20px;
 }
@@ -141,7 +141,7 @@ main {
     height: 490px;
 }
 
-.weekAndValue {                            /* Semana e valor gasto */
+.weekAndValue {
     display: flex;
     justify-content: space-between;
     margin: 16px 20px 16px 20px;
@@ -167,11 +167,11 @@ main {
     border-radius: 3px;
 }
 
-#firstCreditBar {                                /*  total de gastos */
+#firstCreditBar {
     background: #31ED9880;
 }
 
-#firstProgressBar {                              /* Progresso da barra de gastos */
+#firstProgressBar {
     width: 249px;
     background-color: #31ED98;
 }

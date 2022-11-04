@@ -56,7 +56,7 @@ main {
     background-size: contain;
 }
 
-.infoMenu {                                 /* menus retangulares */
+.infoMenu {
     display: flex;
     justify-content: space-between;
     margin: 0px auto;
@@ -75,7 +75,7 @@ main {
     border-bottom: 1px solid #FFFFFF3d;
 }
 
-#apresentation {                            /* Olá (nome do usuário) */
+#apresentation {
     margin: auto 0;
     font-size: 20px;
 }
@@ -101,7 +101,7 @@ main {
     align-items: center;
 }
 
-#accountTotal {                             /* Engloba o texto e o valor*/
+#accountTotal {
     margin-top: 16px;
 }
 
@@ -155,7 +155,7 @@ main {
     color: #FFF;
 }
 
-#creditBar {                                /* Barro total de crédito */
+#creditBar {
     margin-left: 20px;
     width: 311px;
     height: 5px;
@@ -163,14 +163,14 @@ main {
     background: #31ED9880;
 }
 
-#progressBar {                              /* Progresso da barra de crédito */
+#progressBar {
     width: 10%;
     height: 100%;
     border-radius: 3px;
     background-color: #31ED98;
 }
 
-#limit {                                    /* Limite de crédito */
+#limit {
     display: inline-flex;
     margin: 5px 20px 12px 20px;
 }
@@ -192,7 +192,7 @@ main {
     color: #31ED98;
 }
 
-#menu {                                     /* Menu com as 4 opções */
+#menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -202,7 +202,7 @@ main {
     color: #AAAAAAC5;
 }
 
-#menu :first-child{                        /* Ícones do menu */
+#menu :first-child{
     display: flex;
     flex-direction: column;
 }
@@ -250,12 +250,12 @@ main {
     margin: 0 20px;
 }
 
-#subscriptions {                            /* Sessão com os três demonstrativos */
+#subscriptions {
     justify-content: space-between;
     margin: 0 20px;
 }
 
-.sub {                                      /* Demonstrativo unitário */
+.sub {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -292,7 +292,7 @@ main {
     margin-right: 110px;
 }
 
-.subIdentification :nth-child(2), .subIdentification :nth-child(3), .subIdentification :nth-child(4) { /* data e hora*/
+.subIdentification :nth-child(2), .subIdentification :nth-child(3), .subIdentification :nth-child(4) {
     display: inline;
     color: #818181C5;
 }

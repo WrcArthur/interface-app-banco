@@ -65,7 +65,7 @@ main {
     background-size: contain;
 }
 
-.infoMenu {                                 /* menus retangulares */
+.infoMenu {
     display: flex;
     justify-content: space-between;
     margin: 10px auto;
@@ -146,7 +146,7 @@ main {
     color: #BFC1C5;
 }
 
-.sub {                                      /* Demonstrativo unitário */
+.sub {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -179,11 +179,11 @@ main {
     margin-left: 15px;
 }
 
-.subIdentification {                        /* Identificação com nome e data */
+.subIdentification {
     margin-right: 90px;
 }
 
-.subIdentification :nth-child(2), .subIdentification :nth-child(3), .subIdentification :nth-child(4) { /* data e hora*/
+.subIdentification :nth-child(2), .subIdentification :nth-child(3), .subIdentification :nth-child(4) {
     display: inline;
     color: #818181C5;
 }
